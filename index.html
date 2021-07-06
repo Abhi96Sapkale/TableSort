@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <table id="booktable" border="1" style="width: 50%; border-collapse: collapse; border-spacing: 0; text-align: center;">
+        <caption><h3>Books Information</h3></caption>
+        <tr style="background-color: aquamarine;">
+            <!-- <th>Sr.No</th> -->
+            <th>Name</th>
+            <th>Author</th>
+            <th>Available Copies</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <!-- <td>1</td> -->
+            <td>Java</td>
+            <td>Grady Booch</td>
+            <td>800</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <!-- <td>2</td> -->
+            <td>C Programming</td>
+            <td>Dennis Ritchie</td>
+            <td>456</td>
+            <td>450</td>
+        </tr>
+        <tr>
+            <!-- <td>3</td> -->
+            <td>Javascript</td>
+            <td>Mark Mayers</td>
+            <td>365</td>
+            <td>754</td>
+        </tr>
+        <tr>
+            <!-- <td>4</td> -->
+            <td>Database Systems</td>
+            <td>Michal Hernandez</td>
+            <td>254</td>
+            <td>450</td>
+        </tr>
+    </table><br><br>
+    <div>
+        <table border="1" style="border-collapse: collapse;text-align: center;">
+            <tr>
+                <th>Column Name</th>
+                <th>Column No</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Author</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Available Copies</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </div><br>
+    <div>Click the button to sort the table</div>
+    <input id="column" type="text" placeholder="Input column no"><br><br>
+    <button onclick="sortTableAsc()">Ascending</button>
+    <button onclick="sortTableDesc()">Descending</button>
+  </body>
+</html>
